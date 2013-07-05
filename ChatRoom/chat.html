@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="https://cdn.firebase.com/v0/firebase.js" type="text/javascript"></script>
-		<script src="chat.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="chat.css"
-	</head>
+        <head>
+                <script src="firebase.js" type="text/javascript"></script>
+                <script src="chat.js" type="text/javascript"></script>
+                <link rel="stylesheet" type="text/css" href="chat.css"
+        </head>
 
-	<body>
+        <body>
+        		<h1 style="color:red" id='chatroom-title'>Chat Room</h>
+        		<ul id='chat-message-list'>
+        		</ul>
 
-		<h1 style="color:red" id='chatroom-title'>Chat Room</h>
-
-		<form id="chat-form">
-			<input type="text" name="message" id="message-input">
-		</form>
-	</body>
+                <form id="chat-form">
+                        <input type="text" name="message" id="message-input">
+                </form>
+        </body>
 </html>
