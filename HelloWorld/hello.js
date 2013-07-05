@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-	var form=document.getElementById('chatform');
+	var form=document.getElementById('chat-form');
 	var messageInput=document.getElementById('message-input');
 	var chatTitle=document.getElementById('chatroom-title');
 	form.addEventListener('submit', function(event){
