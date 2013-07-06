@@ -7,6 +7,7 @@ import json
 import email
 import hashlib
 from test_data import test_data1, test_data2, test_data3
+import base64
 
 def process_email_header(data):
     response = {}
@@ -16,7 +17,8 @@ def process_email_header(data):
             response[each] = msg[each]
     return response
 
-data = {'clipboard_data':test_data3}
+post_b64 = base64.b64encode(test_data3)
+data = {'clipboard_data':post_b64}
 #sha1 = hashlib.sha1(test_data3).hexdigest()
 #print "Send data sha1: ", sha1
 
