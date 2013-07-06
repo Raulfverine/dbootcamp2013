@@ -1,6 +1,7 @@
 import email
 import urllib
 import hashlib
+from test_data import test_data1
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 import json
@@ -35,8 +36,6 @@ def getDataFromClient():
     #print hashlib.sha1(clipboard_data).hexdigest()
     result = process_email_header(clipboard_data)
     return jsonify(result)
-    
-
     
 if __name__ == "__main__":
     app.run(debug=True, host="ec2-54-254-97-253.ap-southeast-1.compute.amazonaws.com", port=8000)
