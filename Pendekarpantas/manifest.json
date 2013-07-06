@@ -1,13 +1,15 @@
 {
-"manifest_version":2,
-"name": "PendekarPantas",
-"description": "Collection of pentesting tools for Google Chrome",
-"version":"0.1",
-
-"app":{
-        "launch":{
-                "local_path":"pendekarpantas.html"
-                }
-        }
-
+	"manifest_version":2,
+	"name": "PendekarPantas Email Analyzer",
+	"description": "Analyze email content",
+	"version":"0.1",
+	"options_page": "html/menu.html",
+	"permissions": [ 
+                    "contextMenus",
+                    "notifications",
+                    "tabs",
+                    "*://*/*", 
+                    "clipboardWrite",
+                    "clipboardRead"
+                 ],
 }

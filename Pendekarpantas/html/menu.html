@@ -1,0 +1,45 @@
+<!-- 
+/** 
+ * @version 2.0.2
+ * @author Maik Kulbe <info@linux-web-development.de>
+ * @copyright (c) 2010 Maik Kulbe
+ */
+ -->
+<link rel="stylesheet" type="text/css" media="screen" href="../styles/menu.css" />
+
+<div id="menubar">
+	<h1 id="menubar-title">PendekarPantas derieved from d3code</h1>
+	<ul id="menu">
+		<li id="message-tab" class="active">Message</li>
+		<li id="credits-tab">Credits</li>
+	</ul>
+	
+	<p id="buttons">
+		All options are saved when you change them.
+	</p>
+</div>
+
+<div id="optionsFrame">
+	<div id="status"></div>
+	<div id="options">
+		<div id="message">
+			<h1>Here is our message</h1> 
+		
+			<div class="inputs">
+				<div>
+					<input type="radio" name="test_message_1" id="test_message_1" value="alert"/>
+                    <label for="test_message_1">Test1</label>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<div id="credits">
+			<h1>Credits</h1>
+			This extension was developed by Maik Kulbe &lt;<a href="mailto:info@linux-web-development.de">info@linux-web-development.de</a>&gt; for d3coder then we copied just for education....
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../js/menu.js"></script>
