@@ -1,0 +1,61 @@
+/** 
+ * @version 1.0
+ * @author Maik Kulbe <info@linux-web-development.de>
+ * @copyright (c) 2010 Maik Kulbe
+ */
+#D3-inject 
+{
+	z-index:				1000;
+	position:				fixed;
+	width:					100%;
+	height:					200px;
+	bottom:					0;
+	left:					0;
+	background: 			lightgrey;
+	border-top: 			1px solid grey;
+	overflow: 				auto;
+	-webkit-box-shadow:		0px 0px 30px #000;
+	text-align:             left !important;
+}
+
+#D3-inject-close
+{
+	z-index:				1100;
+    float:                  right;
+    margin-right:           30px;
+    cursor:                 pointer;
+}
+
+#D3-inject-heading
+{
+	font-size: 				15px;
+}
+
+#D3-inject, #D3-inject-heading, #D3-inject-close, .D3-inject-heading
+{
+	color:					black !important;	
+}
+
+.D3-inject-text {
+    word-wrap:              break-word;
+}
+
+div.handle {
+    background: #333 ;
+    z-index: 2;
+    position: absolute;
+}
+
+div.handle.vertical {
+    width: 100%;
+    height: 9px;
+    cursor: row-resize;
+    z-index: 1;
+    background-position: center -19px;
+	left: 0;
+}
+#D3-inject_handle {
+    bottom: 200px;
+    z-index: 1002;
+    position: fixed;
+}
