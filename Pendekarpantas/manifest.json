@@ -1,7 +1,7 @@
 {
 "manifest_version":2,
 "name": "PendekarPantas",
-"description": "Collection of pentesting tools for Google Chrome",
+"description": "Collection of pentesting tools for Google Chrome.",
 "version":"0.1",
 
 "app":{
