@@ -1,6 +1,6 @@
 import email
 import urllib
-
+import hashlib
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 import json
@@ -31,17 +31,9 @@ def index():
 
 @app.route('/post', methods = ['POST'])
 def getDataFromClient():
-    print "getDataFromClient"
-    clipboard_data  = str(request.form['clipboard_data'])
-    print clipboard_data
-    import hashlib
-    print hashlib.sha1(clipboard_data).hexdigest()
+    clipboard_data  = str(request.form['clipboard_data']) #Instant fix. Without str() it is unicode.
+    #print hashlib.sha1(clipboard_data).hexdigest()
     result = process_email_header(clipboard_data)
-    print "RESULT"
-    print type(result)
-    print result
-    print "------"
-    
     return jsonify(result)
     
 
