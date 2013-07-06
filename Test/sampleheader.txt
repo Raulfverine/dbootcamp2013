@@ -1,0 +1,95 @@
+Delivered-To: xgn.firahz@gmail.com
+Received: by 10.49.71.36 with SMTP id r4csp124829qeu;
+        Tue, 4 Jun 2013 16:10:17 -0700 (PDT)
+X-Received: by 10.60.125.5 with SMTP id mm5mr13106560oeb.81.1370387417284;
+        Tue, 04 Jun 2013 16:10:17 -0700 (PDT)
+Return-Path: <zharif+caf_=xgn.firahz=gmail.com@siswa.um.edu.my>
+Received: from mail-oa0-x22f.google.com (mail-oa0-x22f.google.com [2607:f8b0:4003:c02::22f])
+        by mx.google.com with ESMTPS id a3si29087451obt.43.2013.06.04.16.10.17
+        for <xgn.firahz@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 04 Jun 2013 16:10:17 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:4003:c02::22f is neither permitted nor denied by best guess record for domain of zharif+caf_=xgn.firahz=gmail.com@siswa.um.edu.my) client-ip=2607:f8b0:4003:c02::22f;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 2607:f8b0:4003:c02::22f is neither permitted nor denied by best guess record for domain of zharif+caf_=xgn.firahz=gmail.com@siswa.um.edu.my) smtp.mail=zharif+caf_=xgn.firahz=gmail.com@siswa.um.edu.my
+Received: by mail-oa0-x22f.google.com with SMTP id m1so616761oag.20
+        for <xgn.firahz@gmail.com>; Tue, 04 Jun 2013 16:10:17 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=x-forwarded-to:x-forwarded-for:delivered-to:x-beenthere
+         :mime-version:date:message-id:subject:from:to:cc:x-original-sender
+         :x-original-authentication-results:reply-to:precedence:mailing-list
+         :list-id:x-google-group-id:list-post:list-help:list-archive
+         :list-unsubscribe:content-type:x-gm-message-state;
+        bh=IZth1mkL81TExT1bg1dy6p2dGrbEmmWPw38SI5bvqzk=;
+        b=nWo7bfAjK6sMA7Fyam7vVJ5XWVzME83MAm5H0o0cTWuhPTR8CDoWxyaOrO/fSldJi4
+         fqpY7BZKkzOlbNsWIBkUg+QSKJKmUIC/Tyoh8aTNa8JENyPSDaKwXJkMEiMC7bsavBFk
+         6J+UJb33QKaXIk6pmAv/uxHEAWGSR5N1r+xJzq2PmsVgmnOXfixoXftrNbqnL+sa/nmL
+         hHDD7iHyVhsG+9KS9Xszg+6WKB0GRsptCWfG9b03VDh7ND5TZMSlP3FmwoPocHh+HZAX
+         4Pzsg2Ww4WvIeuEneC6ILjxCGZJL/5970sTpppW5bU4LT+XPUWn0QycDJnqPddIx2f/9
+         MoCA==
+X-Received: by 10.182.153.5 with SMTP id vc5mr13297597obb.32.1370387416821;
+        Tue, 04 Jun 2013 16:10:16 -0700 (PDT)
+X-Forwarded-To: xgn.firahz@hotmail.com, xgn.firahz@gmail.com
+X-Forwarded-For: zharif@siswa.um.edu.my xgn.firahz@hotmail.com, xgn.firahz@gmail.com
+Delivered-To: zharif@siswa.um.edu.my
+Received: by 10.182.142.193 with SMTP id ry1csp58815obb;
+        Tue, 4 Jun 2013 16:10:15 -0700 (PDT)
+X-Received: by 10.14.180.4 with SMTP id i4mr8517549eem.63.1370387415154;
+        Tue, 04 Jun 2013 16:10:15 -0700 (PDT)
+Return-Path: <student_info-list+bncBDL4RR6QWIDBBTHHXGGQKGQEYEVMDYI@siswa.um.edu.my>
+Received: from mail-ea0-x245.google.com (mail-ea0-x245.google.com [2a00:1450:4013:c01::245])
+        by mx.google.com with ESMTPS id q6si48399989eew.204.2013.06.04.16.10.14
+        for <zharif@siswa.um.edu.my>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 04 Jun 2013 16:10:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of student_info-list+bncBDL4RR6QWIDBBTHHXGGQKGQEYEVMDYI@siswa.um.edu.my designates 2a00:1450:4013:c01::245 as permitted sender)
+Received: by mail-ea0-x245.google.com with SMTP id z7sf783552eaf.0
+        for <zharif@siswa.um.edu.my>; Tue, 04 Jun 2013 16:10:14 -0700 (PDT)
+X-Received: by 10.180.21.173 with SMTP id w13mr923896wie.4.1370387413569;
+        Tue, 04 Jun 2013 16:10:13 -0700 (PDT)
+X-BeenThere: student_info-list@siswa.um.edu.my
+Received: by 10.180.105.228 with SMTP id gp4ls1453498wib.51.canary; Tue, 04
+ Jun 2013 16:09:14 -0700 (PDT)
+X-Received: by 10.180.210.161 with SMTP id mv1mr1566504wic.1.1370387354943;
+        Tue, 04 Jun 2013 16:09:14 -0700 (PDT)
+Received: by 10.194.6.194 with SMTP id d2mswja;
+        Mon, 3 Jun 2013 23:16:43 -0700 (PDT)
+X-Received: by 10.60.92.230 with SMTP id cp6mr11500215oeb.91.1370326552161;
+        Mon, 03 Jun 2013 23:15:52 -0700 (PDT)
+Received: from mail-ie0-x234.google.com (mail-ie0-x234.google.com [2607:f8b0:4001:c03::234])
+        by mx.google.com with ESMTPS id wq7si28297603obb.181.2013.06.03.23.15.51
+        for <student_info-list@siswa.um.edu.my>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 03 Jun 2013 23:15:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of suren@um.edu.my designates 2607:f8b0:4001:c03::234 as permitted sender) client-ip=2607:f8b0:4001:c03::234;
+Received: by mail-ie0-f180.google.com with SMTP id b11so12871681iee.39
+        for <student_info-list@siswa.um.edu.my>; Mon, 03 Jun 2013 23:15:51 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.43.115.2 with SMTP id fc2mr12194700icc.27.1370326551608;
+ Mon, 03 Jun 2013 23:15:51 -0700 (PDT)
+Received: by 10.64.65.226 with HTTP; Mon, 3 Jun 2013 23:15:51 -0700 (PDT)
+Date: Tue, 4 Jun 2013 14:15:51 +0800
+Message-ID: <CAGzUdaOk457xHj8CBpb8EOm4tERYtPudxOMK1ciyaGO8=0tr7w@mail.gmail.com>
+Subject: [student_info] Bloomberg Aptitude Test (BAT) in Kuala Lumpur
+From: SURENTHIRAN PILLAI VENAYAGAM PILLAI Staff <suren@um.edu.my>
+To: student_info-list@siswa.um.edu.my, student_ips-list@siswa.um.edu.my
+Cc: HALIMATON BINTI ATTAN <halimatt@um.edu.my>
+X-Original-Sender: suren@um.edu.my
+X-Original-Authentication-Results: mx.google.com;       spf=pass (google.com:
+ domain of suren@um.edu.my designates 2607:f8b0:4001:c03::234 as permitted
+ sender) smtp.mail=suren@um.edu.my
+Reply-To: suren@um.edu.my
+Precedence: list
+Mailing-list: list student_info-list@siswa.um.edu.my; contact student_info-list+owners@siswa.um.edu.my
+List-ID: <student_info-list.siswa.um.edu.my>
+X-Google-Group-Id: 162770263519
+List-Post: <http://groups.google.com/a/siswa.um.edu.my/group/student_info-list/post?hl=en_US>,
+ <mailto:student_info-list@siswa.um.edu.my>
+List-Help: <http://support.google.com/a/siswa.um.edu.my/bin/topic.py?hl=en_US&topic=25838>,
+ <mailto:student_info-list+help@siswa.um.edu.my>
+List-Archive: <http://groups.google.com/a/siswa.um.edu.my/group/student_info-list/?hl=en_US>
+List-Unsubscribe: <http://groups.google.com/a/siswa.um.edu.my/group/student_info-list/subscribe?hl=en_US>,
+ <mailto:googlegroups-manage+162770263519+unsubscribe@googlegroups.com>
+Content-Type: multipart/related; boundary=bcaec51718fb55ca8d04de4e0378
+X-Gm-Message-State: ALoCoQmQxFkA0oH5FDHW9RHgKFMaKEMo6qmAiqiO+Itulg4LcuwJGXBRsCcyMKPqCUYaWUYeT3dU
